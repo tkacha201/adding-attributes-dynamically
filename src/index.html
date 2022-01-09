@@ -49,8 +49,9 @@
   </body>
   <script>
     let elements = document.querySelectorAll(".product");
+    let price = document.querySelector(".price").innerText;
     for (el of elements) {
-      el.setAttribute("data-price", "span");
+      el.setAttribute("data-price", `${price}`);
     }
   </script>
 </html>
